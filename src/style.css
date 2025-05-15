@@ -1,5 +1,57 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+  width: 100%;  /* que ocupe el ancho de la columna */
+  max-width: 250px; /* opcional, para no crecer demasiado */
+  height: 400px;
+  border-radius: 10px;
+  position: relative;
+  margin: auto;
+}
+
+
+.top-suit,
+.bottom-suit {
+    position: absolute;
+    font-size: 60px;
+}
+
+.top-suit {
+    top: 20px;
+    left: 20px;
+}
+
+.bottom-suit {
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(180deg);
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
 }
